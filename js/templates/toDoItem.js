@@ -9,23 +9,31 @@ import { toElement } from './../utils/toElement';
 function toDoItemTemplate(todo, status, category, start, finished) {
     const template = `
     <section class="my-2">
-        <ul class=" max-w-[32rem] flex flex-col justify-center">
-            <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-slate-900 dark:border-gray-700 dark:text-white">
-                <b>To Do:</b> ${todo}
-            </li>
-            <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-slate-900 dark:border-gray-700 dark:text-white">
-                <b>Status:</b> ${status}
-            </li>
-            <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-slate-900 dark:border-gray-700 dark:text-white">
-                <b>Category:</b> ${category}
-            </li>
-            <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-slate-900 dark:border-gray-700 dark:text-white">
-                <b>Start:</b> ${start}
-            </li>
-            <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-slate-900 dark:border-gray-700 dark:text-white">
-                <b>Finished:</b> ${finished}
-            </li>
-        </ul>
+        <div class="flex flex-col justify-center bg-white border border-t-4 border-t-blue-600 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:border-t-blue-500 dark:shadow-slate-700/[.7]">
+            <div class="p-4 md:p-5">
+                <div class="border-b">
+                    <h3 class="text-lg font-bold text-blue-600 dark:text-white">
+                        ${todo}
+                    </h3>
+                </div>
+                <div>
+                    <ul role="list" class="marker:text-blue-600 list-disc ps-5 space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li>
+                            <b>Status:</b> ${status}
+                        </li>
+                        <li>
+                            <b>Category:</b> ${category}
+                        </li>
+                        <li>
+                            <b>Start:</b> ${start}
+                        </li>
+                        <li>
+                            <b>Finished:</b> ${finished}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
     `;
 

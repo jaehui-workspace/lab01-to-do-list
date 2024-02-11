@@ -17,7 +17,7 @@ function toDoItemTemplate(todo, status, category, start, finished) {
                     </h3>
                 </div>
                 <div class="pt-3">
-                    <ul role="list" class="marker:text-blue-600 list-disc ps-5 space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                    <ul role="list" class="marker:text-blue-600 list-disc ps-5 space-y-2 text-sm text-gray-600 dark:text-white">
                         <li>
                             <b>Status:</b> ${status}
                         </li>

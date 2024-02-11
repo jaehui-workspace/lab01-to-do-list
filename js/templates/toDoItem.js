@@ -12,7 +12,7 @@ function toDoItemTemplate(todo, status, category, start, finished) {
         <div class="flex flex-col justify-center bg-white border border-t-4 border-t-blue-600 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:border-t-blue-500 dark:shadow-slate-700/[.7]">
             <div class="p-4 md:p-5">
                 <div class="border-b">
-                    <h3 class="text-lg font-bold text-blue-600 dark:text-white">
+                    <h3 class="text-lg mb-4 font-bold text-blue-600 dark:text-white">
                         ${todo}
                     </h3>
                 </div>

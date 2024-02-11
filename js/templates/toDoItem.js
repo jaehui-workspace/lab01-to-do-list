@@ -28,7 +28,7 @@ function toDoItemTemplate(todo, status, category, start, finished) {
                             <b>Start:</b> ${start}
                         </li>
                         <li>
-                            <b>Finished:</b> ${finished}
+                            <b>Due Date:</b> ${finished}
                         </li>
                     </ul>
                 </div>

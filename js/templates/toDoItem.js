@@ -8,7 +8,7 @@ import { toElement } from './../utils/toElement';
 
 function toDoItemTemplate(todo, status, category, start, finished) {
     const template = `
-    <section class="my-2">
+    <section class="my-4">
         <div class="flex flex-col justify-center bg-white border border-t-4 border-t-blue-600 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:border-t-blue-500 dark:shadow-slate-700/[.7]">
             <div class="p-4 md:p-5">
                 <div class="border-b">
@@ -16,7 +16,7 @@ function toDoItemTemplate(todo, status, category, start, finished) {
                         ${todo}
                     </h3>
                 </div>
-                <div>
+                <div class="pt-3">
                     <ul role="list" class="marker:text-blue-600 list-disc ps-5 space-y-2 text-sm text-gray-600 dark:text-gray-400">
                         <li>
                             <b>Status:</b> ${status}
